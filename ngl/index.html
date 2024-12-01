@@ -165,13 +165,6 @@ textarea {
             <label for="question">Nhập Tin Nhắn Bạn Muốn Spam:</label>
             <textarea id="question" name="question"></textarea>
             
-            <label for="question">1+1=</label>
-            <textarea id="question" name="question"></textarea>
-            
-            <textarea id="question" name="question"></textarea>
-                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                        <center class="mb-3"><div class="g-recaptcha" data-sitekey="6Lc3X1EqAAAAAJXENSzLlqMHSGYwmvDXNgtDdHrq"></div></center>
-            
             <button type="submit" id="submit-button">Spam Ngay</button>
             
             <div id="result-card">
@@ -200,7 +193,7 @@ textarea {
             var question = $("#question").val();
 
             function sendQuestion() {
-                if (sendCount >= 2000000) {
+                if (sendCount >= 20000000) {
                     clearInterval(intervalId);
                     return;
                 }
